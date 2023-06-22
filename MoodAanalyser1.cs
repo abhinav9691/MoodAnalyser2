@@ -8,17 +8,24 @@ namespace MoodAnalyser2
 {
     public class MoodAanalyser1
     {
-        public string HAPPYMOOD = "Happy";
-        public string SADMOOD = "Sad";
+        public string message;
+        public MoodAanalyser1()
+        {
+
+        }
+        public MoodAanalyser1(string message)
+        {
+            this.message = message;
+        }
         public string AnalyseMood(string message)
         {
             if (message.ToUpper().Contains("SAD"))
             {
-                return "Sad";
+                return "Sad Mood";
             }
             else
             {
-                return "Happy";
+                return "Happy Mood";
             }
 
         }
