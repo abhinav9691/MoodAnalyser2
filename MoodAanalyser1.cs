@@ -14,11 +14,11 @@ namespace MoodAnalyser2
         {
             if (message.ToUpper().Contains("SAD"))
             {
-                return "Sad Mood";
+                return "Sad";
             }
             else
             {
-                return "Happy Mood";
+                return "Happy";
             }
 
         }
